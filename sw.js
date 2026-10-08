@@ -2,7 +2,7 @@
    Naikkan VERSION setiap kali berkas aplikasi diperbarui. */
 const VERSION = 'v2.0.0';
 const CACHE = 'kelas-xitkr2-' + VERSION;
-const SHELL = ['./', './index.html', './manifest.webmanifest', './icons/logo.png', './icons/icon-192.png', './icons/icon-512.png'];
+const SHELL = ['./', './index.html', './manifest.webmanifest', './logo.png', './icon-192.png', './icon-512.png'];
 
 self.addEventListener('install', e => {
   e.waitUntil(caches.open(CACHE).then(c => c.addAll(SHELL)).then(() => self.skipWaiting()));
